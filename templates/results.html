@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForgeryGuard - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h2>Comparison Results</h2>
+    <p>Similarity Score: <strong>{{ score }}%</strong></p>
+
+    <h3>Original Image with Differences</h3>
+    <img src="{{ url_for('uploaded_file', filename=image1) }}" width="300px">
+
+    <h3>Tampered Image with Differences</h3>
+    <img src="{{ url_for('uploaded_file', filename=image2) }}" width="300px">
+
+    <br><br>
+    <a href="/">Try Another</a>
+</body>
+</html>

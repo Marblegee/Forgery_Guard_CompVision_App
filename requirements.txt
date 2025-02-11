@@ -1,0 +1,8 @@
+flask
+flask-wtf
+werkzeug
+opencv-python
+scikit-image
+imutils
+pillow
+requests
